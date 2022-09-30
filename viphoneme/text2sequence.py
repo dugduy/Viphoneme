@@ -9,7 +9,7 @@ def text_to_sequence(text,delimit):
     text=re.sub(re.compile(r'\s+'), ' ', text)
     text=text.rstrip(".").rstrip("?").rstrip("!").rstrip(" ")
     ipa = vi2IPA_split(text,delimit)
-    print("Phoneme: ",ipa)
+#     print("Phoneme: ",ipa)
     #*****************************************8Xử lí vụ cuối câu phải có simple dot : chưa làm
     sequence = []
     phonemes =ipa.split(delimit)
